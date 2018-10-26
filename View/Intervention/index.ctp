@@ -10,10 +10,10 @@
         <table class="table">
           <thead>
             <tr>
-              <th><?= $Lang->get("TABLE_HEAD_LEVEL"); ?></th>
-              <th><?= $Lang->get("TABLE_HEAD_DATE"); ?></th>
-              <th><?= $Lang->get("TABLE_HEAD_AUTHOR"); ?></th>
-              <th><?= $Lang->get("TABLE_HEAD_COMMENT"); ?></th>
+              <th><?= $Lang->get("INTER_TABLE_HEAD_LEVEL"); ?></th>
+              <th><?= $Lang->get("INTER_TABLE_HEAD_DATE"); ?></th>
+              <th><?= $Lang->get("INTER_TABLE_HEAD_AUTHOR"); ?></th>
+              <th><?= $Lang->get("INTER_TABLE_HEAD_COMMENT"); ?></th>
             </tr>
           </thead>
 
