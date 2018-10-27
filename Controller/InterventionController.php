@@ -39,17 +39,17 @@ class InterventionController extends AppController{
 
                 //Form validation
                 if(!isset($Intervention_level) || ($Intervention_level < 0 || $Intervention_level > 4)){
-                    $this->Session->setFlash($this->Lang->get('CL_LEVEL_ERROR'), 'default.error');
+                    $this->Session->setFlash($this->Lang->get('INTER_LEVEL_ERROR'), 'default.error');
                     return $this->redirect($this->referer());
                 }
 
                 if(!isset($Intervention_author) || empty($Intervention_author) || strlen($Intervention_author) < 2 || strlen($Intervention_author) > 50){
-                    $this->Session->setFlash($this->Lang->get('CL_AUTHOR_ERROR'), 'default.error');
+                    $this->Session->setFlash($this->Lang->get('INTER_AUTHOR_ERROR'), 'default.error');
                     return $this->redirect($this->referer());
                 }
 
                 if(!isset($Intervention_comment) || empty($Intervention_comment) || strlen($Intervention_comment) < 10){
-                    $this->Session->setFlash($this->Lang->get('CL_COMMENT_ERROR'), 'default.error');
+                    $this->Session->setFlash($this->Lang->get('INTER_COMMENT_ERROR'), 'default.error');
                     return $this->redirect($this->referer());
                 }
 
@@ -63,12 +63,12 @@ class InterventionController extends AppController{
                         'created' => date('Y-m-d H:i:s')
                    ])
                 ){
-                    $this->Session->setFlash($this->Lang->get('CL_ADD_SUCCESS'), 'default.success');
+                    $this->Session->setFlash($this->Lang->get('INTER_ADD_SUCCESS'), 'default.success');
                     return $this->redirect($this->referer());
                 }
               
                 //error occurred
-                $this->Session->setFlash($this->Lang->get('CL_ERROR_OCCURED'), 'default.error');
+                $this->Session->setFlash($this->Lang->get('INTER_ERROR_OCCURED'), 'default.error');
                 return $this->redirect($this->referer());
             }
 
