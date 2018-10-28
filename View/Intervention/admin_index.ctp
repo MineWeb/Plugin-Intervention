@@ -13,16 +13,16 @@
         <div class="col-md-12">
             <div class="box">
                 <div class="box-header with-border">
-                    <h3 class="box-title"><?= $Lang->get("CL_ADMIN_MAIN_TITLE"); ?></h3> <span style="float:right;"><?= $Lang->get("PLUGIN_DEVELOPED_BY"); ?></span>
+                    <h3 class="box-title"><?= $Lang->get("INTER_ADMIN_MAIN_TITLE"); ?></h3> <span style="float:right;"><?= $Lang->get("PLUGIN_DEVELOPED_BY"); ?></span>
                 </div>
                 <div class="box-body">
                     <div class="row">
                         <div class="col-md-5">
-                            <p style="text-align:justify;font-style:italic;"><?= $Lang->get("CL_PRESENTATION_TITLE"); ?></p>
+                            <p style="text-align:justify;font-style:italic;"><?= $Lang->get("INTER_PRESENTATION_TITLE"); ?></p>
                         </div>
                     </div>
                     
-                    <h4 style="margin-top:30px;"><span class="fa fa-file-text"></span> <?= $Lang->get("CL_CONFIGURATION_TITLE"); ?></h4>
+                    <h4 style="margin-top:30px;"><span class="fa fa-file-text"></span> <?= $Lang->get("INTER_CONFIGURATION_TITLE"); ?></h4>
 
                     <div class="row">
                         <div class="col-md-6">
@@ -32,7 +32,7 @@
 
                                         <div class="form-group col-md-6">
                                             <label class="control-label" id="level">
-                                                <?= $Lang->get("CL_LBL_LEVEL"); ?>
+                                                <?= $Lang->get("INTER_LBL_LEVEL"); ?>
                                                 (
                                                 <span class="label label-success">PLANIFIER</span>
                                                 <span class="label label-info">TERMINER</span>
@@ -53,7 +53,7 @@
                                         </div>
 
                                         <div class="form-group col-md-5">
-                                            <label class="control-label" id="author"><?= $Lang->get("CL_LBL_AUTHOR"); ?></label>
+                                            <label class="control-label" id="author"><?= $Lang->get("INTER_LBL_AUTHOR"); ?></label>
                                             <div class="input-group">
                                                 <span class="input-group-addon"><span class="fa fa-user"></span></span>
                                                 <input type="text" class="form-control" id="author" name="author" placeholder="<?= $Lang->get("CL_PLACEHOLDER_AUTHOR"); ?>" minlength="2" maxlength="50" required>
@@ -61,7 +61,7 @@
                                         </div>
 
                                         <div class="form-group col-md-11">
-                                            <label class="control-label" id="description"><?= $Lang->get("CL_LBL_COMMENT"); ?></label>
+                                            <label class="control-label" id="description"><?= $Lang->get("INTER_LBL_COMMENT"); ?></label>
                                             <?= $this->Html->script('admin/tinymce/tinymce.min.js') ?>
                                             <script>
                                             tinymce.init({
@@ -79,7 +79,7 @@
                                         <div class="form-group col-md-12">
                                             <span class="input-group-btn">
                                                 <input type="hidden" name="data[_Token][key]" value="<?= $csrfToken ?>">
-                                                <button type="submit" class="btn btn-primary"><?= $Lang->get("CL_TXT_SUBMIT"); ?></button>
+                                                <button type="submit" class="btn btn-primary"><?= $Lang->get("INTER_TXT_SUBMIT"); ?></button>
                                             </span>
                                         </div>
                                     </form>
@@ -88,7 +88,7 @@
                         </div>
                     </div>
 
-                    <h4 style="margin-top:30px;"><span class="fa fa-pencil"></span> <?= $Lang->get("CL_DELETE_TITLE"); ?></h4>
+                    <h4 style="margin-top:30px;"><span class="fa fa-pencil"></span> <?= $Lang->get("INTER_DELETE_TITLE"); ?></h4>
                     <div class="row">
                         <div class="col-md-6">
                             <div class="container">
@@ -96,11 +96,11 @@
                                     <table class="table table-striped">
                                         <thead>
                                             <tr>
-                                                <th><?= $Lang->get("TABLE_HEAD_LEVEL"); ?></th>
-                                                <th><?= $Lang->get("TABLE_HEAD_DATE"); ?></th>
-                                                <th><?= $Lang->get("TABLE_HEAD_AUTHOR"); ?></th>
-                                                <th><?= $Lang->get("TABLE_HEAD_COMMENT"); ?></th>
-                                                <th><?= $Lang->get("TABLE_HEAD_DELETE"); ?></th>
+                                                <th><?= $Lang->get("INTER_TABLE_HEAD_LEVEL"); ?></th>
+                                                <th><?= $Lang->get("INTER_TABLE_HEAD_DATE"); ?></th>
+                                                <th><?= $Lang->get("INTER_TABLE_HEAD_AUTHOR"); ?></th>
+                                                <th><?= $Lang->get("INTER_TABLE_HEAD_COMMENT"); ?></th>
+                                                <th><?= $Lang->get("INTER_TABLE_HEAD_DELETE"); ?></th>
                                             </tr>
                                         </thead>
                                         <tbody>
@@ -128,7 +128,7 @@
                                                 <td>
                                                     <a href="<?= $this->Html->url(["controller" => null, "action" => "delete", $changlog['Interventions']['id']]); ?>" class="btn btn-danger" role="button">
                                                         <span class="fa fa-trash"></span>
-                                                        <?= $Lang->get("CL_DELETE_LOG"); ?>
+                                                        <?= $Lang->get("INTER_DELETE_LOG"); ?>
                                                     </a>
                                                 </td>
                                             </tr>
