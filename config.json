@@ -1,3 +1,4 @@
+{
    "name":"Intervention",
    "admin_menus":{
       "GLOBAL__ADMIN_PLUGINS":{
@@ -15,12 +16,15 @@
    "useEvents":true,
    "permissions":{
       "available":[
-       ],
+
+      ],
       "default":{
          "0":[
-          ],
+
+         ],
          "2":[
-          ]
+
+         ]
       }
    },
    "requirements":{
