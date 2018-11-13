@@ -1,7 +1,7 @@
 # Plugin MineWeb | Intervention
 
 ## Description
-Le plugin Intervention ajoute un système d'information sur votre site, permettant à vos joueurs d'être des dernières interventions effectués sur vos machines, ainsi que celle(s) avenir(s). (VotreSite/intervention).
+Le plugin Intervention ajoute un système d'information sur votre site, permettant à vos joueurs d'être informer des dernières interventions effectués sur vos machines, ainsi que celle(s) avenir(s). (VotreSite/intervention).
 
 ## Installation | FTP
 1. Cliquez sur "Clone or download" sur la page "https://github.com/MineWeb/Plugin-Intervention".
