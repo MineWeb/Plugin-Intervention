@@ -25,13 +25,13 @@
               <?php
               $level = $Intervention['Interventions']['level'];
               if($level == 1){
-                echo '<span class="label label-info" style="padding:10px;">TERMINER</span>';
+                echo '<span class="label label-info" style="padding:10px;">TERMINÉ</span>';
               }else if($level == 2){
                 echo '<span class="label label-warning" style="padding:10px;">EN COURS</span>';
               }else if($level == 3){
                 echo '<span class="label label-danger" style="padding:10px;">ÉCHOUÉ</span>';
               }else{
-                echo '<span class="label label-success" style="padding:10px;">PLANIFIER</span>';
+                echo '<span class="label label-success" style="padding:10px;">PLANIFIÉ</span>';
               }
               ?>
 
