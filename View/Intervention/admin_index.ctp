@@ -34,8 +34,8 @@
                                             <label class="control-label" id="level">
                                                 <?= $Lang->get("INTER_LBL_LEVEL"); ?>
                                                 (
-                                                <span class="label label-success">PLANIFIER</span>
-                                                <span class="label label-info">TERMINER</span>
+                                                <span class="label label-success">PLANIFIÉ</span>
+                                                <span class="label label-info">TERMINÉ</span>
                                                 <span class="label label-warning">EN COURS</span>
                                                 <span class="label label-danger">ÉCHOUÉ</span>
                                                 )
@@ -44,8 +44,8 @@
                                                 <span class="input-group-addon"><span class="fa fa-exclamation-circle"></span></span>
                                                 <select class="form-control" id="level" name="level" required>
 												    <option value="">Choisir ..</option>
-                                                    <option value="0">PLANIFIER</option>
-                                                    <option value="1">TERMINER</option>
+                                                    <option value="0">PLANIFIÉ</option>
+                                                    <option value="1">TERMINÉ</option>
                                                     <option value="2">EN COURS</option>
                                                     <option value="3">ÉCHOUÉ</option>
                                                 </select>
@@ -111,13 +111,13 @@
                                                 <?php
                                                 $level = $changlog['Interventions']['level'];
                                                 if($level == 1){
-                                                    echo '<span class="label label-info" style="padding:8px;">TERMINER</span>';
+                                                    echo '<span class="label label-info" style="padding:8px;">TERMINÉ</span>';
                                                 }else if($level == 2){
                                                     echo '<span class="label label-warning" style="padding:8px;">EN COURS</span>';
                                                 }else if($level == 3){
                                                     echo '<span class="label label-danger" style="padding:8px;">ÉCHOUÉ</span>';
                                                 }else{
-                                                    echo '<span class="label label-success" style="padding:8px;">PLANIFIER</span>';
+                                                    echo '<span class="label label-success" style="padding:8px;">PLANIFIÉ</span>';
                                                 }
                                                 ?>
 
