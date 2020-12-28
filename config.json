@@ -1,33 +1,27 @@
 {
-   "name":"Intervention",
-   "admin_menus":{
-      "GLOBAL__ADMIN_PLUGINS":{
-         "Intervention":{
-            "icon":"cog",
-            "route":"/admin/Intervention"
-         }
-      }
-   },
-   "navbar_routes":{
-      "Intervention":"/intervention"
-   },
-   "author":"ByFow",
-   "version":"1.0.1",
-   "useEvents":true,
-   "permissions":{
-      "available":[
-
-      ],
-      "default":{
-         "0":[
-
-         ],
-         "2":[
-
-         ]
-      }
-   },
-   "requirements":{
-      "CMS":"^1.2.0"
-   }
+    "name": "Intervention",
+    "admin_menus": {
+        "GLOBAL__ADMIN_PLUGINS": {
+            "Intervention": {
+                "icon": "cog",
+                "route": "/admin/Intervention"
+            }
+        }
+    },
+    "navbar_routes": {
+        "Intervention": "/intervention"
+    },
+    "author": "ByFow",
+    "version": "1.0.2",
+    "useEvents": true,
+    "permissions": {
+        "available": [],
+        "default": {
+            "0": [],
+            "2": []
+        }
+    },
+    "requirements": {
+        "CMS": "^1.11.0"
+    }
 }
